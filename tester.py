@@ -14,6 +14,9 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(convert_to_cm('oldrussian', 'Elbow', 5), 296.89)
     def test_span_to_cm(self):
         self.assertEqual(convert_to_cm('oldrussian', 'span', 5), 88.9)
+    def test_fathom_to_cm(self):
+        self.assertEqual(convert_to_cm('oldrussian', 'fathom', 5), 1066.8)
+
 
 
 if __name__ == '__main__':

@@ -15,5 +15,6 @@ def convert_to_cm(system,unit,number):
             result = round(number * 59.37777777777941, 2)
         if unit=='span':
             result = round(number * 17.78, 2)
-        
+        if unit=='fathom':
+            result = round(number * 213.36, 2)
     return(result)
