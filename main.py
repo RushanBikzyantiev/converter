@@ -8,4 +8,6 @@ def convert_to_cm(system,unit,number):
             result=round(number*2.54,2)
         if unit == 'foot':
             result=round(number*30.48,2)
+        if unit == 'mi':
+            result=round(number*160934.4,2)
     return(result)
