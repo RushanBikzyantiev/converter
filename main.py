@@ -13,4 +13,7 @@ def convert_to_cm(system,unit,number):
     if system == 'oldrussian':
         if unit=='Elbow':
             result = round(number * 59.37777777777941, 2)
+        if unit=='span':
+            result = round(number * 17.78, 2)
+        
     return(result)

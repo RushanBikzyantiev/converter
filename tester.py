@@ -12,6 +12,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_Elbow_to_cm(self):
         self.assertEqual(convert_to_cm('oldrussian', 'Elbow', 5), 296.89)
-    
+    def test_span_to_cm(self):
+        self.assertEqual(convert_to_cm('oldrussian', 'span', 5), 88.9)
+
+
 if __name__ == '__main__':
     unittest.main()
