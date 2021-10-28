@@ -9,5 +9,9 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(convert_to_cm('american', 'foot', 5), 152.4)
     def test_milya_to_cm(self):
         self.assertEqual(convert_to_cm('american', 'mi', 5), 804672.0)
+
+    def test_Elbow_to_cm(self):
+        self.assertEqual(convert_to_cm('oldrussian', 'Elbow', 5), 296.89)
+    
 if __name__ == '__main__':
     unittest.main()

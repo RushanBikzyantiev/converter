@@ -10,4 +10,7 @@ def convert_to_cm(system,unit,number):
             result=round(number*30.48,2)
         if unit == 'mi':
             result=round(number*160934.4,2)
+    if system == 'oldrussian':
+        if unit=='Elbow':
+            result = round(number * 59.37777777777941, 2)
     return(result)
