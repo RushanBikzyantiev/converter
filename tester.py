@@ -28,7 +28,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(convert_from_cm('american', 'rod', 300), 0.6)
         
     def test_cm_to_verst(self):
-        self.assertEqual(convert_from_cm('american', 'verst', 266700), 2.5)
+        self.assertEqual(convert_from_cm('oldrussian', 'verst', 266700), 2.5)
+
+    def test_cm_to_arshin(self):
+        self.assertEqual(convert_from_cm('oldrussian', 'arshin', 250), 3.52)
 
 if __name__ == '__main__':
     unittest.main()

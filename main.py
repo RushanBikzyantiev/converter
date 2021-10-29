@@ -28,8 +28,10 @@ def convert_from_cm(system, unit, number):
         elif unit == 'rod':
             result = round(number / 502.92, 2)
     
-    elif system == 'oldrussian':
+    if system == 'oldrussian':
         if unit == 'verst':
             result = round(number / 106680, 2)
+        elif unit == 'arshin':
+            result = round(number / 71.12, 2)
 
     return result 
