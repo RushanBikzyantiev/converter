@@ -18,10 +18,11 @@ def convert_to_cm(system,unit,number):
         if unit=='fathom':
             result = round(number * 213.36, 2)
     return(result)
-    
+
 def convert_from_cm(system, unit, number):
     if system == 'american':
         if unit == 'hand':
             result = round(number / 10.16, 2)
-
+        elif unit == 'yard':
+            result = round(number / 91.44, 2)
     return result 

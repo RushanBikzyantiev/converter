@@ -21,5 +21,8 @@ class MyTestCase(unittest.TestCase):
     def test_cm_to_hand(self):
         self.assertEqual(convert_from_cm('american', 'hand', 100), 9.84)
 
+    def test_cm_to_yard(self):
+        self.assertEqual(convert_from_cm('american', 'yard', 50), 0.55)
+
 if __name__ == '__main__':
     unittest.main()
