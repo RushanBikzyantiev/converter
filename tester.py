@@ -1,6 +1,5 @@
 import unittest
 from main import convert_to_cm
-from main import convert_from_cm
 
 class MyTestCase(unittest.TestCase):
     def test_inch_to_cm(self):
@@ -18,8 +17,7 @@ class MyTestCase(unittest.TestCase):
     def test_fathom_to_cm(self):
         self.assertEqual(convert_to_cm('oldrussian', 'fathom', 5), 1066.8)
 
-    def test_cm_to_hand(self):
-        self.assertEqual(convert_from_cm('american', 'hand', 100), 9.84)
+
 
 if __name__ == '__main__':
     unittest.main()
