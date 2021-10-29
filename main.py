@@ -45,6 +45,7 @@ while True:
     print("[2] - Преобразовать из американского в сантиметр")
     print("[3] - Преобразовать из старорусского в американский")
     print("[4] - Преобразовать из старорусского в сантиметр")
+    print("[5] - Выход")
 
     choose = int(input("Введите ваш выбор: "))
     print("--------------------------------------\n")\
@@ -123,5 +124,14 @@ while True:
         print("\t[2] - Пядь")
         print("\t[3] - Вникать")
         source_system = int(input("Ваш выбор: "))
+        if source_system == 1:
+            source_system = "Elbow"
+        elif source_system == 2:
+            source_system = "span"
+        elif source_system == 3:
+            source_system = "fathom"
         num = int(input("Введите число, которое вы хотите преобразовать: "))
         print("Результат: " + str(convert_to_cm('oldrussian', source_system, num)))
+    elif choose == 5:
+        print("Спасибо за использование!")
+        break
