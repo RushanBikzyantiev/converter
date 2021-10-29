@@ -24,5 +24,8 @@ class MyTestCase(unittest.TestCase):
     def test_cm_to_yard(self):
         self.assertEqual(convert_from_cm('american', 'yard', 50), 0.55)
 
+    def test_cm_to_rod(self):
+        self.assertEqual(convert_from_cm('american', 'rod', 300), 0.6)
+
 if __name__ == '__main__':
     unittest.main()
