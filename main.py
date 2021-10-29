@@ -33,5 +33,8 @@ def convert_from_cm(system, unit, number):
             result = round(number / 106680, 2)
         elif unit == 'arshin':
             result = round(number / 71.12, 2)
+        elif unit == 'vershok':
+            result = round(number / 4.445, 2)
+
 
     return result 

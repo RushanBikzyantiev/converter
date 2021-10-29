@@ -32,6 +32,10 @@ class MyTestCase(unittest.TestCase):
 
     def test_cm_to_arshin(self):
         self.assertEqual(convert_from_cm('oldrussian', 'arshin', 250), 3.52)
+    
+    def test_cm_to_vershok(self):
+        self.assertEqual(convert_from_cm('oldrussian', 'vershok', 360), 80.99)
+
 
 if __name__ == '__main__':
     unittest.main()
