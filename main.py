@@ -27,5 +27,9 @@ def convert_from_cm(system, unit, number):
             result = round(number / 91.44, 2)
         elif unit == 'rod':
             result = round(number / 502.92, 2)
+    
+    elif system == 'oldrussian':
+        if unit == 'verst':
+            result = round(number / 106680, 2)
 
     return result 

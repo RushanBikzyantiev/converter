@@ -26,6 +26,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_cm_to_rod(self):
         self.assertEqual(convert_from_cm('american', 'rod', 300), 0.6)
+        
+    def test_cm_to_verst(self):
+        self.assertEqual(convert_from_cm('american', 'verst', 266700), 2.5)
 
 if __name__ == '__main__':
     unittest.main()
